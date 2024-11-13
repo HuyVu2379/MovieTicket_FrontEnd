@@ -1,0 +1,41 @@
+/* HomePage.module.css */
+
+.navbar {
+    background-color: #343a40;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+}
+
+.button {
+    font-weight: bold;
+}
+
+.searchInput {
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+
+.searchIcon {
+    color: #ccc;
+}
+
+.userLink {
+    color: white;
+}
+
+.flagContainer {
+    display: flex;
+    align-items: center;
+}
+
+.flagIcon {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.languageText {
+    color: white;
+}
