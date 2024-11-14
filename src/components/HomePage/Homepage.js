@@ -161,6 +161,7 @@ class HomePage extends Component {
                             draggable={false}
                             infinite={false}
                             autoPlay={false}
+                            showDots={true}
                             keyBoardControl={true}
                             customTransition="transform 0.5s ease-in-out"
                             transitionDuration={500}
@@ -178,6 +179,9 @@ class HomePage extends Component {
                                 </div>
                             ))}
                         </Carousel>
+                        <div class="btn-viewMore">
+                            <button className="btn"><span>Xem thêm</span></button>
+                        </div>
                     </div>
                 </div>
             </div>
