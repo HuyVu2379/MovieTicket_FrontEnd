@@ -6,6 +6,7 @@ import './styles.css';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import spiderman from '../../assets/spiderMan.jpg'
+import MovieBox from '../HomePage/Movie/MovieBox'
 const responsive = {
     superLargeDesktop: {
         breakpoint: { max: 4000, min: 3000 },
@@ -14,6 +15,24 @@ const responsive = {
     desktop: {
         breakpoint: { max: 3000, min: 1024 },
         items: 1
+    },
+    tablet: {
+        breakpoint: { max: 1024, min: 464 },
+        items: 2
+    },
+    mobile: {
+        breakpoint: { max: 464, min: 0 },
+        items: 1
+    }
+};
+const responsive2 = {
+    superLargeDesktop: {
+        breakpoint: { max: 4000, min: 3000 },
+        items: 5
+    },
+    desktop: {
+        breakpoint: { max: 3000, min: 1024 },
+        items: 4
     },
     tablet: {
         breakpoint: { max: 1024, min: 464 },
@@ -134,8 +153,31 @@ class HomePage extends Component {
                             <button className="btn">Đặt Ngay</button>
                         </span>
                     </div>
-                    <div className="movie-is-showing">
-                        <p className="text-white text-center fs-1 fw-bold">Phim đang chiếu</p>
+                    <div className="movie-is-showing mt-5">
+                        <p className="text-white text-center fs-1 fw-bold mb-5">Phim đang chiếu</p>
+                        <Carousel
+                            responsive={responsive2}
+                            swipeable={false}
+                            draggable={false}
+                            infinite={false}
+                            autoPlay={false}
+                            keyBoardControl={true}
+                            customTransition="transform 0.5s ease-in-out"
+                            transitionDuration={500}
+                            containerClass="carousel-container"
+                            removeArrowOnDeviceType={["tablet", "mobile"]}
+                            deviceType={this.props.deviceType}
+                            dotListClass="custom-dot-list-style"
+                            itemClass="carousel-item-padding-40-px"
+                        >
+                            {[...Array(6)].map((_, index) => (
+                                <div key={index} className="carousel-item">
+                                    <div className="movieBox">
+                                        <MovieBox />
+                                    </div>
+                                </div>
+                            ))}
+                        </Carousel>
                     </div>
                 </div>
             </div>
