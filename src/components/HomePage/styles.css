@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* HomePage.module.css */
 
 .navbar {
@@ -7,12 +8,27 @@
 .logo {
     width: 120px;
     height: 120px;
+=======
+.container-fluid {
+    background-image: radial-gradient(circle, rgb(53, 52, 116), rgb(14, 5, 69), rgb(0, 0, 0));
+}
+
+.logo {
+    width: 130px;
+    height: 46px;
+}
+
+.navbar {
+    border-bottom: 1px solid grey;
+    margin-bottom: 20px;
+>>>>>>> origin/main
 }
 
 .button {
     font-weight: bold;
 }
 
+<<<<<<< HEAD
 .searchInput {
     border-radius: 20px;
     padding: 10px 15px;
@@ -37,5 +53,212 @@
 }
 
 .languageText {
+=======
+.inputGroup {
+    width: 350px;
+    max-width: 400px;
+}
+
+.searchInput {
+    border-radius: 20px;
+    padding: 10px 15px;
+    padding-right: 30px;
+}
+
+.searchIcon {
+    right: 10px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.iconUser {
+    color: white;
+    font-size: 30px;
+}
+
+.carousel-container {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.outStandingMovie {
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    object-fit: cover;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.btn-booking {
+    position: absolute;
+    bottom: 40px;
+    right: 20%;
+    z-index: 1;
+}
+
+.btn-booking button {
+    background-color: #fcbf49;
+    color: black;
+    font-size: large;
+    font-weight: 600;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 250 px;
+}
+
+.btn-booking button:hover {
+    background-color: #e6a700;
+}
+
+.filter-session {
+    background-color: #ECF2FF;
+    height: 100px;
+    margin-top: 40px;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-select {
+    width: 250px;
+}
+
+.movieBox {
+    width: 285px;
+    height: auto;
+}
+
+.btn-viewMore {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.btn-viewMore button {
+    color: yellow;
+    font-size: large;
+    font-weight: bold;
+    border: 1px solid yellow;
+    width: 250px;
+    text-align: center;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-viewMore button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, red, orange, yellow);
+    z-index: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+}
+
+.btn-viewMore button:hover::before {
+    transform: scaleX(1);
+}
+
+.btn-viewMore button:hover {
+    color: white;
+    border-color: yellow;
+}
+
+.btn-viewMore button span {
+    position: relative;
+    z-index: 1;
+}
+
+.discountBox {
+    width: 384px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.footer {
+    margin-top: 20px;
+    background-image: linear-gradient(to right, rgb(163, 59, 219), rgb(60, 12, 204), rgb(54, 93, 201));
+    max-height: 300px;
+    padding: 20px 0;
+}
+
+.btn-booking-footer {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.btn-booking-footer button {
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    width: 200px;
+    text-align: center;
+    background-color: transparent;
+    background-color: yellow;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-booking-footer button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgb(11, 25, 81), rgb(92, 54, 204), rgb(54, 93, 201));
+    z-index: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+}
+
+.btn-booking-footer button:hover::before {
+    transform: scaleX(1);
+}
+
+.btn-booking-footer button:hover {
+    color: white;
+}
+
+.btn-booking-footer button span {
+    position: relative;
+    z-index: 1;
+}
+
+.footer-item ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-item li a {
+    text-decoration: none;
+    color: white;
+}
+
+.titleCategory {
+    font-size: 24px;
+    font-weight: '700';
+>>>>>>> origin/main
     color: white;
 }

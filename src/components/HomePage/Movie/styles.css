@@ -1,0 +1,65 @@
+.movieContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.imageContainer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    transition: opacity 0.5s ease;
+}
+
+.imageContainer:hover {
+    opacity: 1;
+}
+
+.imageMovie {
+    width: 285px;
+    height: 424px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    object-fit: cover;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.imageContainer:hover .content {
+    opacity: 1;
+}
+
+.titleName {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.movieContainer:hover .titleName {
+    color: yellow;
+    cursor: pointer;
+}
+
+.content p,
+.content .d-flex {
+    margin: 5px 0;
+}
