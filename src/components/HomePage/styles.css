@@ -1,41 +1,90 @@
-/* HomePage.module.css */
-
-.navbar {
-    background-color: #343a40;
+.logo {
+    width: 130px;
+    height: 46px;
 }
 
-.logo {
-    width: 120px;
-    height: 120px;
+.navbar {
+    border-bottom: 1px solid grey;
+    margin-bottom: 20px;
 }
 
 .button {
     font-weight: bold;
 }
 
+.inputGroup {
+    width: 350px;
+    max-width: 400px;
+}
+
 .searchInput {
     border-radius: 20px;
     padding: 10px 15px;
+    padding-right: 30px;
 }
 
 .searchIcon {
-    color: #ccc;
+    right: 10px;
+    top: 8px;
+    cursor: pointer;
 }
 
-.userLink {
+.iconUser {
     color: white;
+    font-size: 30px;
 }
 
-.flagContainer {
+.carousel-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.outStandingMovie {
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    object-fit: cover;
+}
+
+.carousel-item {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.btn-booking {
+    position: absolute;
+    bottom: 40px;
+    right: 20%;
+    z-index: 1;
+}
+
+.btn-booking button {
+    background-color: #fcbf49;
+    color: black;
+    font-size: large;
+    font-weight: 600;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 250 px;
+}
+
+.btn-booking button:hover {
+    background-color: #e6a700;
+}
+
+.filter-session {
+    background-color: #ECF2FF;
+    height: 100px;
+    margin-top: 40px;
+    border-radius: 10px;
+    justify-content: space-around;
     align-items: center;
 }
 
-.flagIcon {
-    width: 20px;
-    margin-right: 5px;
-}
-
-.languageText {
-    color: white;
+.form-select {
+    width: 250px;
 }
