@@ -34,7 +34,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 20px;
+    padding: 20px;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     opacity: 0;
@@ -47,12 +47,16 @@
 
 .titleName {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 0.8rem;
     font-weight: bold;
     color: white;
     margin-top: 10px;
     transition: color 0.3s ease;
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: auto; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
 }
+
 
 .movieContainer:hover .titleName {
     color: yellow;

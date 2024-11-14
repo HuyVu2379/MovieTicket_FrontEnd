@@ -1,33 +1,45 @@
-import React from "react";
-import PropTypes from "prop-types";  // Import PropTypes to validate props
-import MovieCard from "./MovieCard";
-import './Movie.css'
-// Define MovieSection component
-function MovieSection ({ title, movies }) {
-  return (
-    <section className="movie-section">
-      <h2>{title}</h2>
-      <div className="movie-cards">
-        {movies.map((movie) => (
-          <MovieCard key={movie.id} movie={movie} />
-        ))}
-      </div>
-      <button className="view-more">Xem Thêm</button>
-    </section>
-  );
-};
+import React, { Component } from 'react';
+import MovieCard from './MovieCard' // Import MovieCard component
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
-// PropTypes for validation
-MovieSection.propTypes = {
-  title: PropTypes.string.isRequired,  // title should be a string
-  movies: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.number.isRequired,   // id should be a number
-      title: PropTypes.string.isRequired, // title should be a string
-      rating: PropTypes.string.isRequired, // rating should be a string
-      genre: PropTypes.string.isRequired  // genre should be a string
-    })
-  ).isRequired // movies should be an array of movie objects
-};
+class MovieSection extends Component {
+    render() {
+        const { title, movies, responsive } = this.props;
+
+        return (
+            <div className="movie-section">
+                <p className="text-white text-center fs-1 fw-bold mb-5">{title}</p>
+                <Carousel
+                    responsive={responsive}
+                    swipeable={false}
+                    draggable={false}
+                    infinite={false}
+                    autoPlay={false}
+                    showDots={true}
+                    keyBoardControl={true}
+                    customTransition="transform 0.5s ease-in-out"
+                    transitionDuration={500}
+                    containerClass="carousel-container"
+                    removeArrowOnDeviceType={["tablet", "mobile"]}
+                    deviceType={this.props.deviceType}
+                    dotListClass="custom-dot-list-style"
+                    itemClass="carousel-item-padding-40-px"
+                >
+                    {movies.map((movie, index) => (
+                        <div key={index} className="carousel-item">
+                            <div className="movieCard">
+                                <MovieCard movie={movie} />
+                            </div>
+                        </div>
+                    ))}
+                </Carousel>
+                <div className="btn-viewMore">
+                    <button className="btn"><span>XEM THÊM</span></button>
+                </div>
+            </div>
+        );
+    }
+}
 
 export default MovieSection;

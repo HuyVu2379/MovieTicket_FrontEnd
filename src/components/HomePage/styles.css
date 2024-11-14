@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-/* HomePage.module.css */
-
-.navbar {
-    background-color: #343a40;
-}
-
-.logo {
-    width: 120px;
-    height: 120px;
-=======
 .container-fluid {
     background-image: radial-gradient(circle, rgb(53, 52, 116), rgb(14, 5, 69), rgb(0, 0, 0));
 }
@@ -21,14 +10,12 @@
 .navbar {
     border-bottom: 1px solid grey;
     margin-bottom: 20px;
->>>>>>> origin/main
 }
 
 .button {
     font-weight: bold;
 }
 
-<<<<<<< HEAD
 .searchInput {
     border-radius: 20px;
     padding: 10px 15px;
@@ -52,8 +39,7 @@
     margin-right: 5px;
 }
 
-.languageText {
-=======
+
 .inputGroup {
     width: 350px;
     max-width: 400px;
@@ -259,6 +245,5 @@
 .titleCategory {
     font-size: 24px;
     font-weight: '700';
->>>>>>> origin/main
     color: white;
 }

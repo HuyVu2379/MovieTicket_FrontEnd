@@ -1,12 +1,43 @@
-import React from 'react';
-import './Movie.css'
+import React, { Component } from "react";
+import logo from "../../assets/logo.png";
+import '../HomePage/styles.css';
 
-function Footer() {
-  return (
-    <footer className="bg-dark text-white text-center p-3 mt-4">
-      <p>&copy; 2024 Movie Ticket Booking. All rights reserved.</p>
-    </footer>
-  );
+class Footer extends Component {
+    render() {
+        return (
+            <div className="w-100 footer d-flex justify-content-around">
+                <div className="footer-item">
+                    <img className="logo" src={logo} alt="Logo" />
+                    <p>BE HAPPY, BE A STAR</p>
+                    <div className="btn-booking-footer">
+                        <button className="btn"><span>ĐẶT VÉ</span></button>
+                    </div>
+                </div>
+                <div className="footer-item">
+                    <ul>
+                        <li className="titleCategory">Tài khoản</li>
+                        <li><a href="#">Đăng nhập</a></li>
+                        <li><a href="#">Đăng ký</a></li>
+                        <li><a href="#">Membership</a></li>
+                    </ul>
+                </div>
+                <div className="footer-item">
+                    <ul>
+                        <li className="titleCategory">Xem phim</li>
+                        <li><a href="#">Phim đang chiếu</a></li>
+                        <li><a href="#">Phim sắp chiếu</a></li>
+                    </ul>
+                </div>
+                <div className="footer-item">
+                    <ul>
+                        <li className="titleCategory">CINESTAR</li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+        );
+    }
 }
 
 export default Footer;
