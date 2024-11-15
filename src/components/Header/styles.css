@@ -1,0 +1,59 @@
+.logo {
+    width: 130px;
+    height: 46px;
+}
+
+.navbar {
+    border-bottom: 1px solid grey;
+    margin-bottom: 20px;
+}
+
+.button {
+    font-weight: bold;
+}
+
+.searchInput {
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+
+.searchIcon {
+    color: #ccc;
+}
+
+.userLink {
+    color: white;
+}
+
+.flagContainer {
+    display: flex;
+    align-items: center;
+}
+
+.flagIcon {
+    width: 20px;
+    margin-right: 5px;
+}
+
+
+.inputGroup {
+    width: 350px;
+    max-width: 400px;
+}
+
+.searchInput {
+    border-radius: 20px;
+    padding: 10px 15px;
+    padding-right: 30px;
+}
+
+.searchIcon {
+    right: 10px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.iconUser {
+    color: white;
+    font-size: 30px;
+}

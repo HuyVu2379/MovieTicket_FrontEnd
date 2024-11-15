@@ -1,13 +1,15 @@
 import React, { Component } from "react";
 import logo from "../../assets/logo.png";
 import "bootstrap/dist/css/bootstrap.min.css";
-import '@fortawesome/fontawesome-free/css/all.min.css'; // Import Font Awesome
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import './styles.css';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import spiderman from '../../assets/spiderMan.jpg'
 import MovieBox from '../HomePage/Movie/MovieBox'
 import discount from '../../assets/discountTicket.jpg'
+import Header from "../Header/Header";
+import Footer from '../Footer/Footer'
 const responsive = {
     superLargeDesktop: {
         breakpoint: { max: 4000, min: 3000 },
@@ -68,50 +70,7 @@ class HomePage extends Component {
         return (
             <div className="container-fluid">
                 <div className="container">
-                    <nav className="navbar navbar-expand-lg">
-                        <div className="w-100 d-flex justify-content-between align-items-center">
-                            <div className="d-flex gap-5">
-                                <img
-                                    className="logo"
-                                    src={logo}
-                                    alt="Logo"
-                                />
-
-                                <div className="d-flex align-items-center gap-3">
-                                    <button
-                                        className="btn btn-warning"
-                                        style={{ fontWeight: "bold" }}
-                                    >
-                                        <i className="fas fa-ticket-alt"></i> ĐẶT VÉ NGAY
-                                    </button>
-                                </div>
-                                <a className="text-decoration-none text-white d-flex align-items-center" href="#">Khuyến mãi</a>
-                                <a className="text-decoration-none text-white d-flex align-items-center" href="#">Giới thiệu</a>
-                            </div>
-
-                            <div className="d-flex align-items-center gap-4">
-                                <div className="inputGroup d-flex position-relative">
-                                    <input
-                                        type="text"
-                                        className="searchInput form-control"
-                                        placeholder="Tìm phim, rạp"
-                                        aria-label="Search"
-                                    />
-                                    <span className="searchIcon position-absolute">
-                                        <i className="fas fa-search"></i>
-                                    </span>
-                                </div>
-
-                                <div className="d-flex gap-2">
-                                    <i className="iconUser fas fa-user-circle me-1"></i>
-                                    <a href="#" className="text-white d-flex align-items-center text-decoration-none">
-                                        Đăng nhập
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </nav>
-
+                    <Header />
                     <div className="carousel-container">
                         <Carousel
                             responsive={responsive}
@@ -245,7 +204,7 @@ class HomePage extends Component {
                             autoPlay={false}
                             showDots={true}
                             keyBoardControl={true}
-                            customTransition="transform 0.5s ease-in-out"
+                            customTransistion="transform 0.5s ease-in-out"
                             transitionDuration={500}
                             containerClass="carousel-container"
                             removeArrowOnDeviceType={["tablet", "mobile"]}
@@ -264,36 +223,7 @@ class HomePage extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="w-100 footer d-flex justify-content-around">
-                    <div className="footer-item">
-                        <img className="logo" src={logo} alt="" />
-                        <p>BE HAPPY, BE A STAR</p>
-                        <div class="btn-booking-footer">
-                            <button className="btn"><span>ĐẶT VÉ</span></button>
-                        </div>
-                    </div>
-                    <div className="footer-item">
-                        <ul>
-                            <li className="titleCategory">Tài khoản</li>
-                            <li><a href="#">Đăng nhập</a></li>
-                            <li><a href="#">Đăng ký</a></li>
-                        </ul>
-                    </div>
-                    <div className="footer-item">
-                        <ul>
-                            <li className="titleCategory">Xem phim</li>
-                            <li><a href="#">Phim đang chiếu</a></li>
-                            <li><a href="#">Phim sắp chiếu</a></li>
-                        </ul>
-                    </div>
-                    <div className="footer-item">
-                        <ul>
-                            <li className="titleCategory">CINESTAR</li>
-                            <li><a href="#">Giới thiệu</a></li>
-                            <li><a href="#">Liên hệ</a></li>
-                        </ul>
-                    </div>
-                </div>
+                <Footer />
             </div>
         );
     }
