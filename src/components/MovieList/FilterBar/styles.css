@@ -1,0 +1,45 @@
+/* Filter Bar Styles */
+.filter-session {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filter-session .form-select {
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    background-color: #fff;
+    color: #495057;
+    font-size: 1rem;
+    font-weight: bold; /* Chữ in đậm */
+}
+
+.filter-session .form-select:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.filter-session .btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold; /* Chữ in đậm */
+}
+
+.filter-session .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.filter-session .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.filter-session .fs-2 {
+    font-weight: bold; /* Chữ in đậm */
+}

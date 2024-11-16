@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import logo from "../../assets/logo.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import '../HomePage/styles.css';
+import '../Header/styles.css';
 
 class Header extends Component {
     render() {

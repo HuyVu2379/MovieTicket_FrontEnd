@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { currentlyShowingMovies } from './Movie'; // Import hàm lấy dữ liệu mẫu
-import '../HomePage/styles.css';
+import { currentlyShowingMovies } from '../Movie'; // Import hàm lấy dữ liệu mẫu
+import './styles.css';
+
 
 class FilterBar extends Component {
     constructor(props) {
@@ -44,7 +45,7 @@ class FilterBar extends Component {
                     <option value="3">Chiều</option>
                 </select>
                 <span className="btn btn-primary">
-                    <button className="btn">Đặt Ngay</button>
+                    <button className="btn">ĐẶT NGAY</button>
                 </span>
             </div>
         );

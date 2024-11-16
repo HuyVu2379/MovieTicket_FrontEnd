@@ -1,0 +1,121 @@
+/* Movie Section Styles */
+.movie-section {
+    padding: 20px;
+}
+
+.carousel-container {
+    width: 100%;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+}
+
+.movieCard {
+    width: 100%;
+    max-width: 600px;
+    margin: 10px;
+}
+
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.movie-list .movieCard {
+    flex: 1 1 calc(25% - 20px); /* 4 ô 1 hàng */
+    margin: 10px;
+    max-width: calc(25% - 20px); /* Đảm bảo kích thước tối đa */
+}
+
+/* Button Styles */
+.btn-viewMore {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-viewMore .btn {
+    background-color: #ffcc00;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-viewMore .btn:hover {
+    background-color: #ff9900;
+}
+
+/* Movie Container Styles */
+.movieContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.imageContainer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    transition: opacity 0.5s ease;
+}
+
+.imageContainer:hover {
+    opacity: 1;
+}
+
+.imageMovie {
+    width: 285px;
+    height: 424px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    object-fit: cover;
+}
+
+/* Content Styles */
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.imageContainer:hover .content {
+    opacity: 1;
+}
+
+.titleName {
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: auto; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
+}
+
+.movieContainer:hover .titleName {
+    color: yellow;
+    cursor: pointer;
+}
+
+.content p,
+.content .d-flex {
+    margin: 5px 0;
+}

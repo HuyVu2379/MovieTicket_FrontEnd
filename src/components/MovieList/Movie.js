@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import Header from "./Header";
-import MovieSection from "./MovieSection";
-import Footer from "./Footer";
-import FilterBar from "./FilterBar";
+import Header from "../Header/Header";
+import MovieSection from "./MovieSection/MovieSection";
+import Footer from "../Footer/Footer";
+import FilterBar from "./FilterBar/FilterBar";
 
 import linhMieuImage from "../../assets/linh-mieu-official.jpg";
 import ngayXuaImage from "../../assets/ngay-xua-co-mot-chuyen-tinh-official.jpg";
@@ -13,6 +13,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "react-multi-carousel/lib/styles.css";
 import '@fortawesome/fontawesome-free/css/all.min.css'; // Import Font Awesome
 import '../HomePage/styles.css';
+
 const responsive = {
   superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
