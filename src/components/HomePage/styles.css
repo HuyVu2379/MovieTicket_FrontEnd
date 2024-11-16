@@ -1,5 +1,7 @@
 .container-fluid {
     background-image: radial-gradient(circle, rgb(53, 52, 116), rgb(14, 5, 69), rgb(0, 0, 0));
+    margin: 0;
+    padding: 0;
 }
 
 .carousel-container {
